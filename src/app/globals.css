@@ -1,9 +1,12 @@
 :root {
   --background: #252525;
+  --headerbg: #353535;
   --textdef: #ffffff;
   --textdark: #888888;
   --primary: #cf0091;
   --secondary: #8f0e4a;
+
+  --headerheight: 9vh;
 }
 
 html,

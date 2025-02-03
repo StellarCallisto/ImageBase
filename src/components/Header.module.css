@@ -1,0 +1,8 @@
+.headerstyle {
+    display: flex;
+    height: var(--headerheight);
+    background-color: var(--headerbg);
+    position:fixed;
+    top: 0;
+    width: 100vw;
+}
