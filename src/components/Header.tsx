@@ -1,19 +1,12 @@
-import { CSSProperties } from 'react';
-import styles from './Header.module.css';
-
-const stylebody: CSSProperties = {
-    display: "flex",
-    height: "var(--headerheight)",
-    backgroundColor: "var(--headerbg)",
-    position: "fixed",
-    top: 0,
-    width: "100vw",
-}
+import Link from 'next/link';
+import style from './Header.module.css';
 
 export function Header() {
     return (
-      <div className={styles.headerstyle} style={stylebody}>
-        
+      <div className={style.header}>
+        <Link href={'/info'} className={style.link}>Information</Link>
+        <Link href={'/mysaved'} className={style.link}>My Saved Images</Link>
+        <Link href={'/local'} className={style.link}>Local Storage</Link>
       </div>
     )
 }

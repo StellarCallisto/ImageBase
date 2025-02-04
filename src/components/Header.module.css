@@ -1,8 +1,26 @@
-.headerstyle {
+.header {
     display: flex;
     height: var(--headerheight);
     background-color: var(--headerbg);
-    position:fixed;
+    position: fixed;
     top: 0;
     width: 100vw;
+    padding: 0 10vw 0 10vw;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.link {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "PT Serif", serif;
+    font-size: 20;
+    color: var(--textdef);
+    transition: 500ms;
+}
+
+.link:hover {
+    font-size: 24px;
 }
